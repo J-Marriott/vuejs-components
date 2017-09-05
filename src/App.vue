@@ -4,9 +4,7 @@
         <hr>
         <div class="row">
             <server-list></server-list>
-            <div class="col-xs-12 col-sm-6">
-                <p>Server Details are currently not updated</p>
-            </div>
+            <server-details></server-details>
         </div>
         <hr>
         <div class="row">
@@ -22,10 +20,12 @@
 <script>
   import Header from './Header.vue';
   import ServerList from './ServerList.vue'
+  import ServerDetails from './ServerDetails.vue'
   export default {
     components: {
       'status-header': Header,
       'server-list': ServerList,
+      'server-details': ServerDetails,
     }
   }
 </script>
