@@ -3,15 +3,7 @@
         <status-header></status-header>
         <hr>
         <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <ul class="list-group">
-                    <li
-                            class="list-group-item"
-                            v-for="index in 5">
-                        Server #{{ index }}
-                    </li>
-                </ul>
-            </div>
+            <server-list></server-list>
             <div class="col-xs-12 col-sm-6">
                 <p>Server Details are currently not updated</p>
             </div>
@@ -29,9 +21,11 @@
 
 <script>
   import Header from './Header.vue';
+  import ServerList from './ServerList.vue'
   export default {
     components: {
       'status-header': Header,
+      'server-list': ServerList,
     }
   }
 </script>
